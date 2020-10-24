@@ -94,16 +94,25 @@ section.MainElements{
 .PersonalProjects{
     display: flex;
     flex-direction: row;
+   width: 100%;
+   margin: auto;
+}
+
+.PersonalProjects img{
+
+
+width: 100%;
 }
 
 .PersonalProjects div{
     margin: auto;
+   width: 25%;
+    
 }
 
 .BanderLink img{
-    width: 400px;
-    height: 400px;
-    margin: auto;
+    
+    
     border-radius: 50%;
     border: 2px solid rgb(231, 231, 231);
     box-shadow: 0 0 30px gray;
@@ -112,9 +121,7 @@ section.MainElements{
     }
 
     .AlteriaLink img{
-        width: 400px;
-        height: 400px;
-          margin: auto;
+        
           border-radius: 50%;
           border: 2px solid rgb(231, 231, 231);
          box-shadow: 0 0 30px gray;
@@ -122,9 +129,7 @@ section.MainElements{
         }
 
         .ZomSiegeLink img{
-            width: 400px;
-            height: 400px;
-              margin: auto;
+           
               border-radius: 50%;
               border: 2px solid rgb(231, 231, 231);
             box-shadow: 0 0 30px gray;
@@ -601,6 +606,12 @@ footer{
     .AboutMe .CasualProfile{
       flex-direction: column-reverse;
     }
+
+    .PersonalProjects div{
+      margin: auto;
+     width: 40%;
+      
+  }
   }
 
   #mobileContact{
@@ -617,4 +628,28 @@ footer{
     #mobileContact{
       display: flex;
     }
+
+    .AboutMe .ProfileImage{
+     
+      margin: auto;
+      margin-bottom: 10px;
+      width: 90%;
+    }
+
+    .ProfessionalExperience img{
+      width: 100%;
+    }
+
+    .AboutMe .InterestPics{
+      margin: auto;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .PersonalProjects div{
+      margin: auto;
+     width: 50%;
+      
+  }
+  
   }
