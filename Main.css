@@ -437,6 +437,10 @@ h3{
     opacity: 1;
   }
   
+.demo {
+  display: none;
+}
+
   /* Modal Content */
   .modal-content {
     position: relative;
