@@ -636,6 +636,9 @@ footer{
       width: 120%;
     }
 
+   .AboutMe{
+     overflow: hidden;
+   }
     .ProfessionalExperience img{
       width: 100%;
     }
@@ -646,6 +649,7 @@ footer{
       width: 120%;
     }
 
+    
     .PersonalProjects div{
       margin: auto;
      width: 50%;
