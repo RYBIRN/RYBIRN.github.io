@@ -633,10 +633,11 @@ footer{
      
       margin: auto;
       margin-bottom: 10px;
-      width: 130%;
+      width: 100%;
     }
 
    .AboutMe{
+    
      overflow: hidden;
    }
     .ProfessionalExperience img{
@@ -646,7 +647,7 @@ footer{
     .AboutMe .InterestPics{
       margin: auto;
       margin-bottom: 10px;
-      width: 120%;
+      width: 100%;
     }
 
     
