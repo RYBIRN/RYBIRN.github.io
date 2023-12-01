@@ -1,226 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ryan Birnie</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
-    <script src="scripts/Lightbox.js"></script>
-  
-</head>
-<body>
+  </head>
 
-    <header class="mobileHeader" id = myHeader>
-      <h1><a href="index.html">RYAN BIRNIE</a></h1>
+  <body>
+    <header class="glass">
+      <a href="#" class="logo">RYAN BIRNIE</a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="#">ABOUT ME</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#"><button class="glowing-btn btn-flicker glowing-border"><span class="glowing-txt txt-flicker">C<span class="faulty-letter">O</span>NTACT</span></button></a>
+    </header> 
+
+    <div class="hero">
+        <ul class="hero__left">
+          <li class="name">RYAN BIRNIE</li>
+          <li class="myTitle">GAME DEVELOPER</li>
+          <li class="Links"></li>
+        </ul>
+      <div class="hero__right"><img src="images/Astronaut.png"></div>
+    </div>
 
 
-    </header>
+      <div class="about glass">
 
-    <header class="header" id="myHeader">
-      
-        <nav>
-          <ul>
-              <li><a href="#top">ABOUT ME</a></li>
-              <li><a href="#ProfessionalExperience">PROFESSIONAL EXPERIENCE</a></li>
-              <li><a href="#PersonalProjects">PERSONAL PROJECTS</a></li>
-              <li><a href="#Resume">RESUME</a></li>
-              <li><a href="mailto:ryanbirnie64@gmail.com">CONTACT ME</a></li>
+        <nav class="tabs">
+          <ul class="tab__links">
+            <li>
+                <div class="tab__button">
+                  <button onclick="switchAboutSection('bio')" id ="bio__btn" class="glowing-txt tab__box bio__btn">BIO</button>
+                  <div class="tab__box"><button onclick="switchAboutSection('bio')" class="glowing-btn selection__button color1 glow"></button></div>
+                </div>
+            </li>
+            <li>
+                <div class="tab__button">
+                  <button onclick="switchAboutSection('skills')" id = "skills__btn" class="glowing-txt tab__box skills__btn">REEL</button>
+                  <div class="tab__box"><button onclick="switchAboutSection('skills')" class="glowing-btn selection__button color2 glow"></button></div>
+                </div>
+            </li>
+            <!-- 
+            <li>
+              <div class="tab__button">
+                <button onclick="switchAboutSection('contact')" id = "contact__btn" class="glowing-txt tab__box contact__btn">CONTACT</button>
+                <div class="tab__box"><button onclick="switchAboutSection('contact')" class="glowing-btn selection__button color3 glow"></button></div>
+              </div>
+          </li>
+          -->
           </ul>
-        </nav>
-        
-        <h1><a href="index.html">RYAN BIRNIE</a></h1>
-        
-    </header>
+          <div class="selection__laser"></div>
+        </nav>  
 
-    <section class="MainElements"  id="aboutMe">
-      <section class="newSection AboutMe">
-    <h2>ABOUT ME</h2>
-
-    <section class="linebreak1">
-        <hr>
-    </section>
-  
-    <section class="flexBox MainProfile">
-      <section class="ProfileImage">
-            <img src="images/RyanAtRedRocks.JPG" alt="Ryan at Red Rocks Ampetheater."> 
-        </section>
-        
-        <section class="textBox">
-          <h4>Hello!</h4>
-          <p>My name is Ryan and I am a software engineer from Florida Polytechnic University, based out of Orlando, Florida.</p>
-          <p>I specialize in game development and simulation, with a strong passion for developing projects that are creative, engaging, and highly entertaining with a strong basis in realism. I have 6 years expierience using both Unity and Unreal Engine 4, and I am proficient in Java and C#.</p>
-          <p>Currently I am looking for a Junior Software Engineer position, to continue to hone my skills as a developer and solve unique real-world challeneges for customers. My areas of interest are:</p>
+        <div class="bio__content" id="bio__content">
+          <div class="bio__left">
+          <br>Hello!<br>
+          My name is Ryan, I am a software engineer from Florida Polytechnic University based out of Orlando, Florida. I specialize in game development and simulation, with a strong passion for developing projects that are creative, engaging, and highly entertaining. I have 4 years experience using Unreal Engine for personal projects, and 2 years experience in Unity which I used for University projects. I am proficient in C++, and for web development I am proficient in React and Remix (JavaScript).
+          <br/><br/>Currently I am searching for a Junior Game Development position to hone my skills as a developer and continue to bring innovative ideas to life. My areas of interest are:
           <ul>
             <li>Game Development</li>
-            <li>VR/AR Technologies</li>
             <li>Web Development</li>
             <li>Mobile App Development</li>
             <li>UI/UX Design</li>
           </ul>
-             <p>If you need a quality developer, with a strong attention to detail please <a href="mailto:ryanbirnie64@gmail.com" class="contactMe" >contact me</a>. Lets build something together!</p>
-          </section>
-      
-      </section>
-      
-      <section class="flexBox CasualProfile">
-       
-        <section class="textBox">
-          <h4>Personal Interests</h4>
-          <p>A few things I enjoy most when not working are:</p>
-          <ul> 
-          <li>Playing guitar, and recording music</li>
-          <li>Going hiking with my dog Beau.</li>
-          <li>Learning Photography, and photo/video editing.</li>
-          <li>Travelling with friends, and searching out new experiences and good food!</li>
-          </ul>
-        </section>
-   
+          Please take a look at my portfolio below, and if you need a quality developer, with a strong attention to detail please don’t hesitate to reach out. Lets build something together!          
+        </div>
+        <div class="bio__right"></div>
+        </div>
+
+        <div class="skills__content" id="skills__content">
+          <br>
+          Reel Coming Soon...
+          <br>
+        </div>
         
-      <section class="InterestPics">
-        <section class="InterestPicsGroup">
-        <div>
-            <img src="images/RyanAtE3.jpg" alt="Ryan at E3."> 
-        </div>
-        <div>
-            <img src="images/RyanAndBeau.jpg" alt="Pic of Ryan and Beau">
-        </div>
-        <div>
-            <img src="images/Guitar.jpg" alt="Pic of guitar and cat.">
-        </div>
-      </section>
-    </section>
+        <div class="contact__content" id="contact__content"></div>
+        
+       </div>
 
-    </section>
- 
-  </section>
-  
-  <section class="newSection">
-    <div id="ProfessionalExperience"></div>
-    <h2>PROFESSIONAL EXPERIENCE</h2>
-    <section class="linebreak2">
-        <hr>
-    </section>
-    
-    <section class="ProfessionalExperience">   
-      <h3>Automated Robotic Surgery Training</h3>
-     <a href="https://www.behance.net/gallery/95501119/Smarter-Surgical-Training-Device" target="_blank"><img src="images/BehanceLinkPic.png" alt="Link to Smarter Sugical Training Behance page" ></a>
-    </section>
+       <div class="portfolio">
+          <div class="portfolio-itm glass"><img src="images\bander_logo.png"></div>
+          <div class="portfolio-itm glass"><img src="images\bander_logo.png"></div>
+          <div class="portfolio-itm glass"><img src="images\bander_logo.png"></div>
+          <div class="portfolio-itm glass"><img src="images\bander_logo.png"></div>
+          <div class="portfolio-itm glass"><img src="images\bander_logo.png"></div>
+          <div class="portfolio-itm glass"><img src="images\bander_logo.png"></div>
+       </div>
 
-  </section>
-    
-
-  <section class="newSection">
-    <div id="PersonalProjects"></div>
-    <h2 >PERSONAL PROJECTS</h2>
-    <section class="linebreak3">
-        <hr>
-    </section>
-    <section class="PersonalProjects">
-        <div class="BanderLink">
-          <h2>Bander</h2>
-          <a href="https://github.com/RYBIRN/bander" target="_blank"><img src="images/BanderLogoSquare.png" alt="Bander Logo link to Github"></a>
-        </div>
-        <div class="AlteriaLink">
-          <h2>Project Alteria</h2>
-          <a href="Alteria.html"><img src="images/AlteriaSquare.png" alt="Alteria Game Link"></a>
-        </div>
-        <div class="ZomSiegeLink">
-          <h2>Zombie Siege</h2>
-          <a onclick="openModal();currentSlide(1)"><img src="images/zomSiegeSquare.png" alt="Zombie Siege Game images link."></a>
-        </div>
-
-    </section>
-  </section>
-
-    <!-- The Modal/Lightbox -->
-    <div id="myModal" class="modal">
-        <h2>Zombie Siege</h2>
-        <section class="linebreak1"><hr></section>
-       
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-  
-      <div class="mySlides">
-        <div class="numbertext">1 / 4</div>
-        <img src="images/ZomSiege6.png" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">2 / 4</div>
-        <img src="images/ZomSiege1.png" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">3 / 4</div>
-        <img src="images/ZomSiege4.png" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <div class="numbertext">4 / 4</div>
-        <img src="images/ZomSiege5.png" style="width:100%">
-      </div>
-  
-      <!-- Next/previous controls -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  
-      <!-- Caption text -->
-      <div class="caption-container">
-        <p id="caption"></p>
-        <p><a href="https://rybirn.itch.io/zombie-siege" target="_blank"><strong>RYBIRN.itch.io</strong></a></p>
-      </div>
-  
-      <!-- Thumbnail image controls -->
-      <div class="column">
-        <img class="demo" src="images/ZomSiege6.png" onclick="currentSlide(1)" alt="Zombie Siege was a 2 week game design challenge I completed for the 2019 Florida Polytechnic University Game Expo.">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="images/ZomSiege1.png" onclick="currentSlide(2)" alt="The game consists of three levels, each increasing in difficulty. The player must utilize their available bombs to successfully destyroy all zombies trying to get into their castle; The player has a limited number of bombs to complete each level.">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="images/ZomSiege4.png" onclick="currentSlide(3)" alt="Developing Zombie Siege in 2 weeks was a difficult but enlightening expierience. As a solo project going from level design, to AI navigation put all my skills to the test using Unity and C#.">
-      </div>
-  
-      <div class="column">
-        <img class="demo" src="images/ZomSiege5.png" onclick="currentSlide(4)" alt="If you would like to check Zombie Siege out click the link below to download it from my itch.io">
-      </div>
-    </div>
-  </div>
-
-  <section class="newSection">
-
-    <div id="Resume"></div>
-    <h2>RESUME</h2>
-    <section class="linebreak1"><hr></section>
-  </div>
-    <section class="Resume">
-        <a href="resources/Ryan_Birnie_Resume.pdf" target="_blank"><img src="images/Ryan_Birnie_Resume.png" alt="Ryans Resume link to download."></a>
-    </section>
-    </section>
-
-    </section>
-
-    <footer>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/ryan-birnie-9731a21b2/" target="_blank">LINKEDIN</a>
-            </li>
-            <li>
-              <a href="https://github.com/rybirn" target="_blank">GITHUB</a>
-            </li>
-            <li>
-              <a href="https://rybirn.itch.io/">ITCH.IO</a>
-            </li>
-            <li><a href="mailto:ryanbirnie64@gmail.com" id="mobileContact">CONTACT ME</a></li>
-          </ul>
-        </nav>
-    </footer>
-
-</body>
+       <script src="D:\GithubProjects\RYBIRN.github.io\scripts\activebtn.js"></script>
+  </body>
 </html>
